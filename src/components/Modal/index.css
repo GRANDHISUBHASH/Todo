@@ -1,0 +1,87 @@
+/* Overlay styling for the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darkened background for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for overlay */
+  }
+  
+  /* Content styling for the modal */
+  .modal-content {
+    background: #fff;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Slightly increased border radius for a smoother look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more prominent pop */
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    animation: slide-in 0.3s ease-out; /* Slide-in animation for the modal content */
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333; /* Darker color for better visibility */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+  }
+  
+  .close-btn:hover {
+    color: #ff6347; /* Tomato color on hover for better interaction */
+  }
+  
+  /* Slide-in animation keyframes */
+  @keyframes slide-in {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* General font styling for the modal */
+  .modal-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #444; /* Slightly lighter color for better contrast */
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .modal-content button {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out; /* Smooth background transition on hover */
+  }
+  
+  .modal-content button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

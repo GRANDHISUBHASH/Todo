@@ -1,0 +1,54 @@
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.task-item:hover {
+  background-color: #f1f1f1;
+}
+
+.task-item span {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.task-item button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-item .edit-btn {
+  background-color: #ffc107;
+  color: white;
+  margin-right: 5px;
+}
+
+.task-item .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.task-item .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-item .delete-btn:hover {
+  background-color: #bd2130;
+}
